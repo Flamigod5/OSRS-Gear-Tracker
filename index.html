@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSRS Endgame Gear Tracker</title>
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <h1>OSRS Endgame Gear Tracker</h1>
+  </div>
+
+  <nav class="tab-bar">
+    <button class="tab-button active" data-tab="melee">Melee</button>
+    <button class="tab-button" data-tab="range">Range</button>
+    <button class="tab-button" data-tab="magic">Magic</button>
+  </nav>
+
+  <main>
+
+    <!-- MELEE TAB -->
+    <section id="melee" class="tab-content active">
+      <h2>Melee Setups</h2>
+
+      <div class="melee-grid">
+        <!-- Slash -->
+<div class="gear-column">
+  <h3>Slash</h3>
+  <div class="equipment-layout">
+
+    <div class="slot head" data-name="Oathplate Helm" style="background-image: url('./images/oathplate_helm.png');"></div>
+    <div class="slot cape" data-name="Infernal Cape" style="background-image: url('./images/infernal_cape.png');"></div>
+    <div class="slot neck" data-name="Amulet of Rancour" style="background-image: url('./images/amulet_of_rancour.png');"></div>
+    <div class="slot ammo" data-name="Rada's Blessing 4" style="background-image: url('./images/radas_blessing_4.png');"></div>
+
+    <div class="slot weapon" data-name="Blade of Saeldor" style="background-image: url('./images/blade_of_saeldor.png');"></div>
+    <div class="slot body" data-name="Oathplate Chest" style="background-image: url('./images/oathplate_chest.png');"></div>
+    <div class="slot shield" data-name="Avernic Defender" style="background-image: url('./images/avernic_defender.png');"></div>
+
+    <div class="slot legs" data-name="Oathplate Legs" style="background-image: url('./images/oathplate_legs.png');"></div>
+    <div class="slot hands" data-name="Ferocious Gloves" style="background-image: url('./images/ferocious_gloves.png');"></div>
+    <div class="slot feet" data-name="Avernic Treads" style="background-image: url('./images/avernic_treads.png');"></div>
+    <div class="slot ring" data-name="Bellator Ring" style="background-image: url('./images/bellator_ring.png');"></div>
+
+  </div>
+</div>
+
+
+
+        <!-- Crush -->
+<div class="gear-column">
+  <h3>Crush</h3>
+  <div class="equipment-layout">
+
+    <div class="slot head" data-name="Inquisitors Great Helm" style="background-image: url('./images/inquisitors_great_helm.png');"></div>
+    <div class="slot cape" data-name="Infernal Cape" style="background-image: url('./images/infernal_cape.png');"></div>
+    <div class="slot neck" data-name="Amulet of Rancour" style="background-image: url('./images/amulet_of_rancour.png');"></div>
+    <div class="slot ammo" data-name="Rada's Blessing 4" style="background-image: url('./images/radas_blessing_4.png');"></div>
+
+    <div class="slot weapon" data-name="Inquisitors Mace" style="background-image: url('./images/inquisitors_mace.png');"></div>
+    <div class="slot body" data-name="Inquisitors Hauberk" style="background-image: url('./images/inquisitors_hauberk.png');"></div>
+    <div class="slot shield" data-name="Avernic Defender" style="background-image: url('./images/avernic_defender.png');"></div>
+
+    <div class="slot legs" data-name="Inquisitors Plateskirt" style="background-image: url('./images/inquisitors_plateskirt.png');"></div>
+    <div class="slot hands" data-name="Ferocious Gloves" style="background-image: url('./images/ferocious_gloves.png');"></div>
+    <div class="slot feet" data-name="Avernic Treads" style="background-image: url('./images/avernic_treads.png');"></div>
+    <div class="slot ring" data-name="Ultor Ring" style="background-image: url('./images/ultor_ring.png');"></div>
+
+  </div>
+</div>
+
+
+
+        <!-- Stab -->
+<div class="gear-column">
+  <h3>Stab</h3>
+  <div class="equipment-layout">
+
+    <div class="slot head" data-name="Torva Full Helm" style="background-image: url('./images/torva_full_helm.png');"></div>
+    <div class="slot cape" data-name="Infernal Cape" style="background-image: url('./images/infernal_cape.png');"></div>
+    <div class="slot neck" data-name="Amulet of Rancour" style="background-image: url('./images/amulet_of_rancour.png');"></div>
+    <div class="slot ammo" data-name="Rada's Blessing 4" style="background-image: url('./images/radas_blessing_4.png');"></div>
+
+    <div class="slot weapon" data-name="Ghrazi Rapier" style="background-image: url('./images/ghrazi_rapier.png');"></div>
+    <div class="slot body" data-name="Torva Platebody" style="background-image: url('./images/torva_platebody.png');"></div>
+    <div class="slot shield" data-name="Avernic Defender" style="background-image: url('./images/avernic_defender.png');"></div>
+
+    <div class="slot legs" data-name="Torva Platelegs" style="background-image: url('./images/torva_platelegs.png');"></div>
+    <div class="slot hands" data-name="Ferocious Gloves" style="background-image: url('./images/ferocious_gloves.png');"></div>
+    <div class="slot feet" data-name="Avernic Treads" style="background-image: url('./images/avernic_treads.png');"></div>
+    <div class="slot ring" data-name="Ultor Ring" style="background-image: url('./images/ultor_ring.png');"></div>
+
+  </div>
+</div>
+
+
+
+        <!-- Defence -->
+<div class="gear-column">
+  <h3>Defence</h3>
+  <div class="equipment-layout">
+
+    <div class="slot head" data-name="Justiciar Faceguard" style="background-image: url('./images/justiciar_faceguard.png');"></div>
+    <div class="slot cape" data-name="Infernal Cape" style="background-image: url('./images/infernal_cape.png');"></div>
+    <div class="slot neck" data-name="Amulet of Blood Fury" style="background-image: url('./images/amulet_of_blood_fury.png');"></div>
+    <div class="slot ammo" data-name="Rada's Blessing 4" style="background-image: url('./images/radas_blessing_4.png');"></div>
+
+    <div class="slot weapon" data-name="Dinh's Bulwark" style="background-image: url('./images/dinhs_bulwark.png');"></div>
+    <div class="slot body" data-name="Justiciar Chestguard" style="background-image: url('./images/justiciar_chestguard.png');"></div>
+    <div class="slot shield" data-name="Empty Shield Slot" style="background-image: url('./images/shield_slot.png');"></div>
+
+    <div class="slot legs" data-name="Justiciar Legguards" style="background-image: url('./images/justiciar_legguards.png');"></div>
+    <div class="slot hands" data-name="Barrows Gloves" style="background-image: url('./images/barrows_gloves.png');"></div>
+    <div class="slot feet" data-name="Echo Boots" style="background-image: url('./images/echo_boots.png');"></div>
+    <div class="slot ring" data-name="Ring of Suffering (i)" style="background-image: url('./images/ring_of_suffering_i.png');"></div>
+
+  </div>
+</div>
+
+
+
+<h2>Content Specific Gear</h2>
+
+<table class="content-table">
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/serpentine_helm.png');"></div></td>
+      <td>Serpentine Helm</td>
+      <td>Venom Immunity</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/osmumtens_fang.png');"></div></td>
+      <td>Osmumten's Fang</td>
+      <td>High Defence</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/emberlight.png');"></div></td>
+      <td>Emberlight</td>
+      <td>Demonbane</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/dragon_hunter_lance.png');"></div></td>
+      <td>Dragon Hunter Lance</td>
+      <td>Dragonbane</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/noxious_halberd.png');"></div></td>
+      <td>Noxious Halberd</td>
+      <td>Extended Range</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/burning_claws.png');"></div></td>
+      <td>Burning Claws</td>
+      <td>Demonbane, Special Attack</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/dragon_claws.png');"></div></td>
+      <td>Dragon Claws</td>
+      <td>Special Attack</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/voidwaker.png');"></div></td>
+      <td>Voidwaker</td>
+      <td>Special Attack, High Defence</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/dragon_warhammer.png');"></div></td>
+      <td>Dragon Warhammer</td>
+      <td>%‑Based Defence Reduction</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/bandos_godsword.png');"></div></td>
+      <td>Bandos Godsword</td>
+      <td>Flat Defence Reduction</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/saradomin_godsword.png');"></div></td>
+      <td>Saradomin Godsword</td>
+      <td>Healing & Prayer Restoration</td>
+    </tr>
+
+  </tbody>
+</table>
+
+    </section>
+
+    <!-- RANGE TAB -->
+    <section id="range" class="tab-content">
+      <h2>Ranged Setups</h2>
+
+      <div class="range-grid">
+        <!-- Crossbow -->
+<div class="gear-column">
+  <h3>Crossbow</h3>
+  <div class="equipment-layout">
+
+    <div class="slot head" data-name="Masori Helm (f)" style="background-image: url('./images/masori_helm_f.png');"></div>
+    <div class="slot cape" data-name="Infernal Cape" style="background-image: url('./images/infernal_cape.png');"></div>
+    <div class="slot neck" data-name="Necklace of Rupture" style="background-image: url('./images/necklace_of_rupture.png');"></div>
+    <div class="slot ammo" data-name="Dizana's Quiver" style="background-image: url('./images/dizanas_quiver.png');"></div>
+
+    <div class="slot weapon" data-name="Zaryte Crossbow" style="background-image: url('./images/zaryte_crossbow.png');"></div>
+    <div class="slot body" data-name="Masori Body (f)" style="background-image: url('./images/masori_body_f.png');"></div>
+    <div class="slot shield" data-name="Twisted Buckler" style="background-image: url('./images/twisted_buckler.png');"></div>
+
+    <div class="slot legs" data-name="Masori Chaps (f)" style="background-image: url('./images/masori_chaps_f.png');"></div>
+    <div class="slot hands" data-name="Zaryte Vambraces" style="background-image: url('./images/zaryte_vambraces.png');"></div>
+    <div class="slot feet" data-name="Avernic Treads" style="background-image: url('./images/avernic_treads.png');"></div>
+    <div class="slot ring" data-name="Lightbearer" style="background-image: url('./images/lightbearer.png');"></div>
+
+  </div>
+</div>
+
+
+
+        <!-- Blowpipe -->
+<div class="gear-column">
+  <h3>Blowpipe</h3>
+  <div class="equipment-layout">
+
+    <div class="slot head" data-name="Masori Helm (f)" style="background-image: url('./images/masori_helm_f.png');"></div>
+    <div class="slot cape" data-name="Infernal Cape" style="background-image: url('./images/infernal_cape.png');"></div>
+    <div class="slot neck" data-name="Necklace of Rupture" style="background-image: url('./images/necklace_of_rupture.png');"></div>
+    <div class="slot ammo" data-name="Dizana's Quiver" style="background-image: url('./images/dizanas_quiver.png');"></div>
+
+    <div class="slot weapon" data-name="Toxic Blowpipe" style="background-image: url('./images/toxic_blowpipe.png');"></div>
+    <div class="slot body" data-name="Masori Body (f)" style="background-image: url('./images/masori_body_f.png');"></div>
+    <div class="slot shield" data-name="Empty" style="background-image: url('./images/empty.png');"></div>
+
+    <div class="slot legs" data-name="Masori Chaps (f)" style="background-image: url('./images/masori_chaps_f.png');"></div>
+    <div class="slot hands" data-name="Zaryte Vambraces" style="background-image: url('./images/zaryte_vambraces.png');"></div>
+    <div class="slot feet" data-name="Avernic Treads" style="background-image: url('./images/avernic_treads.png');"></div>
+    <div class="slot ring" data-name="Venator Ring" style="background-image: url('./images/venator_ring.png');"></div>
+
+  </div>
+</div>
+
+
+
+        <!-- Bow -->
+<div class="gear-column">
+  <h3>Bow</h3>
+  <div class="equipment-layout">
+
+    <div class="slot head" data-name="Crystal Helm" style="background-image: url('./images/crystal_helm.png');"></div>
+    <div class="slot cape" data-name="Infernal Cape" style="background-image: url('./images/infernal_cape.png');"></div>
+    <div class="slot neck" data-name="Necklace of Rupture" style="background-image: url('./images/necklace_of_rupture.png');"></div>
+    <div class="slot ammo" data-name="Dizana's Quiver" style="background-image: url('./images/dizanas_quiver.png');"></div>
+
+    <div class="slot weapon" data-name="Bow of Faerdhinen" style="background-image: url('./images/bow_of_faerdhinen.png');"></div>
+    <div class="slot body" data-name="Crystal Body" style="background-image: url('./images/crystal_body.png');"></div>
+    <div class="slot shield" data-name="Empty Shield" style="background-image: url('./images/empty_shield.png');"></div>
+
+    <div class="slot legs" data-name="Crystal Legs" style="background-image: url('./images/crystal_legs.png');"></div>
+    <div class="slot hands" data-name="Zaryte Vambraces" style="background-image: url('./images/zaryte_vambraces.png');"></div>
+    <div class="slot feet" data-name="Avernic Treads" style="background-image: url('./images/avernic_treads.png');"></div>
+    <div class="slot ring" data-name="Venator Ring" style="background-image: url('./images/venator_ring.png');"></div>
+
+  </div>
+</div>
+
+
+
+        <!-- Megarare -->
+<div class="gear-column">
+  <h3>Megarare</h3>
+  <div class="equipment-layout">
+
+    <div class="slot head" data-name="Masori Helm (f)" style="background-image: url('./images/masori_helm_f.png');"></div>
+    <div class="slot cape" data-name="Infernal Cape" style="background-image: url('./images/infernal_cape.png');"></div>
+    <div class="slot neck" data-name="Necklace of Rupture" style="background-image: url('./images/necklace_of_rupture.png');"></div>
+    <div class="slot ammo" data-name="Dizana's Quiver" style="background-image: url('./images/dizanas_quiver.png');"></div>
+
+    <div class="slot weapon" data-name="Twisted Bow" style="background-image: url('./images/twisted_bow.png');"></div>
+    <div class="slot body" data-name="Masori Body (f)" style="background-image: url('./images/masori_body_f.png');"></div>
+    <div class="slot shield" data-name="Empty Shield" style="background-image: url('./images/empty_shield.png');"></div>
+
+    <div class="slot legs" data-name="Masori Chaps (f)" style="background-image: url('./images/masori_chaps_f.png');"></div>
+    <div class="slot hands" data-name="Zaryte Vambraces" style="background-image: url('./images/zaryte_vambraces.png');"></div>
+    <div class="slot feet" data-name="Avernic Treads" style="background-image: url('./images/avernic_treads.png');"></div>
+    <div class="slot ring" data-name="Venator Ring" style="background-image: url('./images/venator_ring.png');"></div>
+
+  </div>
+</div>
+
+
+
+<h2>Content Specific Gear</h2>
+
+<table class="content-table">
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/serpentine_helm.png');"></div></td>
+      <td>Serpentine Helm</td>
+      <td>Venom Immunity</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/dragon_hunter_crossbow.png');"></div></td>
+      <td>Dragon Hunter Crossbow</td>
+      <td>Dragonbane</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/scorching_bow.png');"></div></td>
+      <td>Scorching Bow</td>
+      <td>Demonbane</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/venator_bow.png');"></div></td>
+      <td>Venator Bow</td>
+      <td>Slayer, Tagging</td>
+    </tr>
+
+  </tbody>
+</table>
+
+    </section>
+
+    <!-- MAGIC TAB -->
+    <section id="magic" class="tab-content">
+      <h2>Magic Setups</h2>
+
+      <div class="magic-grid">
+        <!-- Elemental -->
+<div class="gear-column">
+  <h3>Elemental</h3>
+  <div class="equipment-layout">
+
+    <div class="slot head" data-name="Ancestral Hat" style="background-image: url('./images/ancestral_hat.png');"></div>
+    <div class="slot cape" data-name="Imbued Zaros Cape" style="background-image: url('./images/imbued_zaros_cape.png');"></div>
+    <div class="slot neck" data-name="Elemental Amulet" style="background-image: url('./images/elemental_amulet.png');"></div>
+    <div class="slot ammo" data-name="Rada's Blessing 4" style="background-image: url('./images/radas_blessing_4.png');"></div>
+
+    <div class="slot weapon" data-name="Harmonised Nightmare Staff" style="background-image: url('./images/harmonised_nightmare_staff.png');"></div>
+    <div class="slot body" data-name="Ancestral Robe Top" style="background-image: url('./images/ancestral_robe_top.png');"></div>
+    <div class="slot shield" data-name="Tome of Fire" style="background-image: url('./images/tome_of_fire.png');"></div>
+
+    <div class="slot legs" data-name="Ancestral Robe Bottom" style="background-image: url('./images/ancestral_robe_bottom.png');"></div>
+    <div class="slot hands" data-name="Confliction Gauntlets" style="background-image: url('./images/confliction_gauntlets.png');"></div>
+    <div class="slot feet" data-name="Avernic Treads" style="background-image: url('./images/avernic_treads.png');"></div>
+    <div class="slot ring" data-name="Magus Ring" style="background-image: url('./images/magus_ring.png');"></div>
+
+  </div>
+</div>
+
+
+
+        <!-- Ancient Magicks -->
+<div class="gear-column">
+  <h3>Ancient Magicks</h3>
+  <div class="equipment-layout">
+
+    <div class="slot head" data-name="Virtus Mask" style="background-image: url('./images/virtus_mask.png');"></div>
+    <div class="slot cape" data-name="Imbued Zaros Cape" style="background-image: url('./images/imbued_zaros_cape.png');"></div>
+    <div class="slot neck" data-name="Occult Necklace" style="background-image: url('./images/occult_necklace.png');"></div>
+    <div class="slot ammo" data-name="Rada's Blessing 4" style="background-image: url('./images/radas_blessing_4.png');"></div>
+
+    <div class="slot weapon" data-name="Kodai Wand" style="background-image: url('./images/kodai_wand.png');"></div>
+    <div class="slot body" data-name="Virtus Robe Top" style="background-image: url('./images/virtus_robe_top.png');"></div>
+    <div class="slot shield" data-name="Elidinis Ward (f)" style="background-image: url('./images/elidinis_ward_f.png');"></div>
+
+    <div class="slot legs" data-name="Virtus Robe Bottom" style="background-image: url('./images/virtus_robe_bottom.png');"></div>
+    <div class="slot hands" data-name="Confliction Gauntlets" style="background-image: url('./images/confliction_gauntlets.png');"></div>
+    <div class="slot feet" data-name="Avernic Treads" style="background-image: url('./images/avernic_treads.png');"></div>
+    <div class="slot ring" data-name="Magus Ring" style="background-image: url('./images/magus_ring.png');"></div>
+
+  </div>
+</div>
+
+
+
+        <!-- Powered Stave -->
+<div class="gear-column">
+  <h3>Powered Stave</h3>
+  <div class="equipment-layout">
+
+    <div class="slot head" data-name="Ancestral Hat" style="background-image: url('./images/ancestral_hat.png');"></div>
+    <div class="slot cape" data-name="Imbued Zaros Cape" style="background-image: url('./images/imbued_zaros_cape.png');"></div>
+    <div class="slot neck" data-name="Occult Necklace" style="background-image: url('./images/occult_necklace.png');"></div>
+    <div class="slot ammo" data-name="Rada's Blessing 4" style="background-image: url('./images/radas_blessing_4.png');"></div>
+
+    <div class="slot weapon" data-name="Eye of Ayak" style="background-image: url('./images/eye_of_ayak.png');"></div>
+    <div class="slot body" data-name="Ancestral Robe Top" style="background-image: url('./images/ancestral_robe_top.png');"></div>
+    <div class="slot shield" data-name="Elidinis Ward (f)" style="background-image: url('./images/elidinis_ward_f.png');"></div>
+
+    <div class="slot legs" data-name="Ancestral Robe Bottom" style="background-image: url('./images/ancestral_robe_bottom.png');"></div>
+    <div class="slot hands" data-name="Confliction Gauntlets" style="background-image: url('./images/confliction_gauntlets.png');"></div>
+    <div class="slot feet" data-name="Avernic Treads" style="background-image: url('./images/avernic_treads.png');"></div>
+    <div class="slot ring" data-name="Magus Ring" style="background-image: url('./images/magus_ring.png');"></div>
+
+  </div>
+</div>
+
+
+
+        <!-- Megarare -->
+<div class="gear-column">
+  <h3>Megarare</h3>
+  <div class="equipment-layout">
+
+    <div class="slot head" data-name="Ancestral Hat" style="background-image: url('./images/ancestral_hat.png');"></div>
+    <div class="slot cape" data-name="Imbued Zaros Cape" style="background-image: url('./images/imbued_zaros_cape.png');"></div>
+    <div class="slot neck" data-name="Occult Necklace" style="background-image: url('./images/occult_necklace.png');"></div>
+    <div class="slot ammo" data-name="Rada's Blessing 4" style="background-image: url('./images/radas_blessing_4.png');"></div>
+
+    <div class="slot weapon" data-name="Tumeken's Shadow" style="background-image: url('./images/tumekens_shadow.png');"></div>
+    <div class="slot body" data-name="Ancestral Robe Top" style="background-image: url('./images/ancestral_robe_top.png');"></div>
+    <div class="slot shield" data-name="Empty Shield" style="background-image: url('./images/empty_shield.png');"></div>
+
+    <div class="slot legs" data-name="Ancestral Robe Bottom" style="background-image: url('./images/ancestral_robe_bottom.png');"></div>
+    <div class="slot hands" data-name="Confliction Gauntlets" style="background-image: url('./images/confliction_gauntlets.png');"></div>
+    <div class="slot feet" data-name="Avernic Treads" style="background-image: url('./images/avernic_treads.png');"></div>
+    <div class="slot ring" data-name="Magus Ring" style="background-image: url('./images/magus_ring.png');"></div>
+
+  </div>
+</div>
+
+
+
+<h2>Content Specific Gear</h2>
+
+<table class="content-table">
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/serpentine_helm.png');"></div></td>
+      <td>Serpentine Helm</td>
+      <td>Venom Immunity</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/dragon_hunter_wand.png');"></div></td>
+      <td>Dragon Hunter Wand</td>
+      <td>Dragonbane</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/purging_staff.png');"></div></td>
+      <td>Purging Staff</td>
+      <td>Demonbane</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/tome_of_fire.png');"></div></td>
+      <td>Tome of Fire</td>
+      <td>Fire Spells</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/tome_of_earth.png');"></div></td>
+      <td>Tome of Earth</td>
+      <td>Earth Spells</td>
+    </tr>
+
+    <tr>
+      <td><div class="slot" style="background-image: url('./images/tome_of_water.png');"></div></td>
+      <td>Tome of Water</td>
+      <td>Water Spells</td>
+    </tr>
+
+  </tbody>
+</table>
+
+    </section>
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
