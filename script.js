@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // ===============================
-  // TAB SWITCHING
-  // ===============================
   const tabButtons = document.querySelectorAll(".tab-button");
   const tabContents = document.querySelectorAll(".tab-content");
 
@@ -19,14 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // ===============================
-  // RESTORE SELECTIONS
-  // ===============================
   restoreSelections();
 
-  // ===============================
-  // GEAR SLOT CLICK HANDLING
-  // ===============================
   document.querySelectorAll('.slot').forEach(slot => {
     slot.addEventListener('click', () => {
       slot.classList.toggle('selected');
@@ -34,9 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // ===============================
-  // CONTENT ROW CLICK HANDLING
-  // ===============================
   document.querySelectorAll('.content-table tbody tr').forEach(row => {
     row.addEventListener('click', () => {
       row.classList.toggle('selected-row');
@@ -47,12 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// ===============================
-// SAVE SELECTIONS
-// ===============================
 function saveSelections() {
   const selectedSlots = [...document.querySelectorAll('.slot.selected')]
-    .map(slot => slot.dataset.name);
+    .map(slot => slot.dataset.id);
 
   const selectedRows = [...document.querySelectorAll('.content-table tbody tr.selected-row')]
     .map(row => [...row.parentNode.children].indexOf(row));
@@ -62,15 +47,12 @@ function saveSelections() {
 }
 
 
-// ===============================
-// RESTORE SELECTIONS
-// ===============================
 function restoreSelections() {
   const selectedSlots = JSON.parse(localStorage.getItem('selectedSlots') || "[]");
   const selectedRows = JSON.parse(localStorage.getItem('selectedRows') || "[]");
 
-  selectedSlots.forEach(name => {
-    const slot = document.querySelector(`.slot[data-name="${name}"]`);
+  selectedSlots.forEach(uid => {
+    const slot = document.querySelector(`.slot[data-id="${uid}"]`);
     if (slot) slot.classList.add('selected');
   });
 
