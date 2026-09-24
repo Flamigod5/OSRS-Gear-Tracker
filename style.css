@@ -94,6 +94,11 @@ body {
   font-size: 10px;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
   cursor: pointer;
+
+  /* ⭐ Image rendering fix */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Hover enlarge + gold glow (default fallback) */
@@ -185,7 +190,6 @@ body {
   border-color: #7a2a2a;
 }
 
-
 /* RANGE — GREEN */
 .range-grid .slot:hover {
   box-shadow: 0 0 10px rgba(80, 200, 80, 0.85);
@@ -196,7 +200,6 @@ body {
   color: #66ff66;
   border-color: #2a7a2a;
 }
-
 
 /* MAGIC — BLUE */
 .magic-grid .slot:hover {
@@ -214,6 +217,7 @@ body {
   background: rgba(0, 255, 0, 0.15);
   box-shadow: inset 0 0 8px rgba(0, 255, 0, 0.4);
 }
+
 .content-table .slot.selected {
   box-shadow: none;
   background-color: transparent;
